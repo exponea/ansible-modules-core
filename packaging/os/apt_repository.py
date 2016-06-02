@@ -452,7 +452,7 @@ def main():
         argument_spec=dict(
             repo=dict(required=True),
             state=dict(choices=['present', 'absent'], default='present'),
-            mode=dict(required=False, default=int('0644',8)),
+            mode=dict(required=False, default='0644'),
             update_cache = dict(aliases=['update-cache'], type='bool', default='yes'),
             filename=dict(required=False, default=None),
             # this should not be needed, but exists as a failsafe
